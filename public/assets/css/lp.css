@@ -1,0 +1,668 @@
+@media (min-width: 768px){
+    .navbar-expand-md .navbar-toggler {
+        display: initial !important;
+    }
+}
+/* Define the shape and color of the hamburger lines */
+.navbar-toggler {
+    padding: 1rem 1.157rem;
+}
+.navbar-toggler span {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+}
+.z-pos {
+    z-index: 1;
+}
+
+/* top line needs a little padding */
+.navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+}
+
+/**
+ * Animate collapse into X.
+ */
+
+/* top line rotates 45 degrees clockwise and moves up and in a bit to close the center of the X in the center of the button */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+}
+/* center line goes transparent */
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+}
+/* bottom line rotates 45 degrees counter clockwise, in, and down a bit to close the center of the X in the center of the button  */
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    transform: translate(15%, 33%) rotate(-45deg) ;
+}
+
+
+/**
+ * Animate collapse open into hamburger menu
+ */
+
+/* top line moves back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+/* middle line goes back to regular color and opacity */
+.navbar-toggler span:nth-child(2) {
+    opacity: 1;
+}
+/* bottom line goes back to initial position and rotates back to 0 degrees */
+.navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg) ;
+}
+
+/*End Animate collapse into X*/
+body {
+    font-family: Hiragino Kaku Gothic ProN;
+}
+#grad1 {
+    height: 8px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #73EF81;
+    background-image: linear-gradient(to left, #73EF81, white);
+}
+#grad2 {
+    height: 5px;
+    width: 100px;
+    background-color: #f6f6f600;
+    background-image: linear-gradient(to left, #73EF81, #ffffff00);
+}
+.lh-2{
+    line-height: 2;
+}
+.navbar-light .navbar-nav .nav-link {
+    color:white !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color:rgba(255, 255, 255, 0.329) !important;
+}
+.bg-header {
+    background-color: #00A713;
+    height:12vh;
+}
+.navbar-light .navbar-toggler {
+    color: #ffffff00;
+    border-color: #ffffff00;
+}
+.navbar-toggler {
+    color: #fffdfd00 !important;
+    border-color: #ffffff00 !important;
+    outline: 0px auto transparent !important;
+    border: 0px solid transparent !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url(../img/nav-toggle.png) !important;
+    width:20px;
+    height:20px;
+}
+
+img {
+    width:100%;
+}
+.row {
+    margin-left:0px; margin-right:0px;
+}
+.pt-32 {
+    padding-top:8rem;
+}
+.pt-16 {
+    padding-top:4rem;
+}
+.pt-8 {
+    padding-top:2rem;
+}
+.pb-32 {
+    padding-bottom:8rem;
+}
+.py-16 {
+    padding-top:4rem;
+}
+.px-16 {
+    padding-left:4rem;
+    padding-right:4rem;
+}
+.px-8 {
+    padding-left:2rem;
+    padding-right:2rem;
+}
+.py-8 {
+    padding-top:2rem;
+    padding-bottom:2rem;
+}
+.mt-16{
+    margin-top:4rem;
+}
+.my-16 {
+    margin-top:4rem;
+    margin-bottom:4rem;
+}
+.mx-16 {
+    margin-left:4rem;
+    margin-right:4rem;
+}
+.mb-16 {
+    margin-bottom:4rem;
+}
+.my-8 {
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+.mb-8 {
+    margin-bottom:2rem;
+}
+.mx-8 {
+    margin-left:2rem;
+    margin-right:2rem;
+}
+.mx-70 {
+    margin: 70px 0px;
+}
+/*ADD Part*/
+.bg-ACD3EC {
+    background: url('../img/top_bg.png') no-repeat;
+    background-size: 100% 100%;
+    height:89vh;
+}
+.bg-EAF9EB{
+    background-color: #EAF9EB;
+}
+.top-title {
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
+.sm-top-title {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.show-left {
+    box-sizing: border-box;
+    background-color: #6DD679;
+    padding: 20px 40px 20px 300px;
+}
+.show-left-text {
+    margin-top: 60px;
+    padding:20px;
+    font-size: 20px;
+}
+.show-left-text1 {
+    font-size: 70px;
+}
+.sm-show-left-text1{
+    font-size: 30px;
+}
+.img-text1{
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+    color: white;
+    font-size: 30px;
+}
+.img-left{
+    position: absolute;
+    bottom: 60px;
+    right:40px;
+    width: 7%;
+    height:30px;
+}
+.show-right {
+    background-color: #6DD679;
+}
+.show-right-text {
+    font-size: 60px;
+    color: white;
+}
+.sm-show-right-text {
+    font-size: 30px;
+    color: white;
+}
+.top-height-1 {
+    margin-top: 150px;
+}
+.check-img {
+    width: 4.5%;
+}
+.text-show {
+    border: 1px solid #707070;
+}
+.text-show-content {
+    font-size: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.bg-service5 {
+    background-color: #EAF9EB;
+}
+.bg-service6 {
+    background: url('../img/footer-img.png') no-repeat;
+    background-size: 100% 120%;
+}
+.text-center {
+    text-align: center;
+}
+.custom-btn {
+    background-color: transparent;
+    border: 1px solid #02B917;
+    padding: 20px;
+    border-radius: 10px;
+    font-size:20px;
+}
+.custom-btn1{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    font-size:20px;
+}
+.service-button {
+    padding: 10px;
+    border: 2px solid #02B917;
+    color: #02B917;
+    background-color: white;
+    margin: 30px 0px;
+    font-size: 25px;
+}
+.footer{
+    background-color: #707070;
+    padding: 20px;
+}
+.my-16-1 {
+    margin-top: 4rem;
+}
+.section-title {
+    color: #02B917;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content:center
+}
+.justify-between {
+    justify-content: space-between;
+}
+.item-center {
+    align-items:center
+}
+.font-family-1 {
+    font-family: Source Han Sans JP;
+}
+.font-family-2 {
+    font-family: Yu Gothic;
+}
+
+.font-size-10 {
+    font-size:10px;
+}
+.font-size-12 {
+    font-size:12px;
+}
+.font-size-15 {
+    font-size:15px;
+}
+.font-size-20 {
+    font-size:20px;
+}
+.font-size-30 {
+    font-size:30px;
+}
+.font-size-25 {
+    font-size:25px;
+}
+.font-size-40 {
+    font-size:40px;
+}
+.font-size-50 {
+    font-size:50px;
+}
+.font-size-80 {
+    font-size:80px;
+}
+.font-size-70 {
+    font-size:70px;
+}
+.font-size-60 {
+    font-size:60px;
+}
+.text-white {
+    color:white;
+}
+.text-black {
+    color:black;
+}
+.nav-item {
+    font-family: Microsoft JhengHei;
+    font-weight: 900;
+    padding:10px 0px 10px 0px;
+}
+.nav-link {
+    color:white;
+}
+.navbar-brand {
+    display: inline-block;
+}
+.hr-6DB858 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px solid #6DB858;
+}
+
+.padding-y-100 {
+    padding: 100px 0px;
+}
+.padding-y-50 {
+    padding: 50px 0px;
+}
+.padding-30 {
+    padding: 30px;
+}
+.service-title {
+    background-color:#02B917;
+    padding:30px 80px;
+    line-height: 1;
+}
+.menu {
+    position:absolute;
+    top:0px;
+    left:30px;
+    display: none;
+}
+.menu.show  {
+    display:block;
+}
+.dropdown-menu.show {
+    padding-top:0px;
+    padding-bottom:0px;
+}
+
+
+@media (max-width: 576px){
+    .service-button {
+        width:100%
+    }
+    .mx-70 {
+        margin:30px 0px;
+    }
+    .padding-sm-10x {
+        padding-left:10px;
+        padding-right:10px;
+    }
+    .service-title {
+        padding:20px;
+        text-align:center !important;
+    }
+    .padding-y-50 {
+        padding: 25px 0px;
+    }
+    .section-title {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .font-size-25 {
+        font-size:17px;
+    }
+    .font-size-80 {
+        font-size:40px;
+    }
+    .font-size-70 {
+        font-size:25px;
+    }
+    .top-title {
+        margin-top: 100px;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        padding: 0px 60px;
+    }
+    .sm-top-title {
+        margin-top: 50px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .circle {
+        height: 70px;
+        width: 70px;
+        background-color: #E3D65E;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 6;
+        color: white;
+    }
+    #navbar {
+        padding:0px 0px 0px 10px;
+    }
+    .navbar-brand img {
+        width:100px;
+    }
+    .col-md-3.price.py-4.bg-white {
+        margin-bottom:20px;
+    }
+    .width-10percent {
+        width:30%;
+    }
+    .width-30percent ,.width-50percent, .width-40percent{
+        width:100% ;
+    }
+    .width-15percent
+    {
+        width:50%;
+    }
+    .width-80percent {
+        width:100% ;
+    }
+    .font-size-10 {
+        font-size:10px;
+    }
+    .font-size-12 {
+        font-size:12px;
+    }
+    .font-size-15 {
+        font-size:15px;
+    }
+    .font-size-20 {
+        font-size:20px;
+    }
+    .font-size-30 {
+        font-size:20px;
+    }
+    .font-size-40 {
+        font-size:40px;
+    }
+    .font-size-50 {
+        font-size:30px;
+    }
+    .left-half {
+        left: 0%;
+        transform: inherit;
+    }
+    .sm-relative {
+        position: relative;
+    }
+    .sm-display-none {
+        display: none;
+    }
+    body {
+        font-size:0.8rem;
+    }
+    .top-60 {
+        top:20px;
+    }
+    .flex-45 {
+        flex: 0 0 100%;
+    }
+    .pt-32 {
+        padding-top:8rem;
+    }
+    .pt-16 {
+        padding-top:4rem;
+    }
+    .pb-32 {
+        padding-bottom:8rem;
+    }
+    .py-16 {
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    .px-16 {
+        padding-left:4rem;
+        padding-right:4rem;
+    }
+    .px-8 {
+        padding-left:2rem;
+        padding-right:2rem;
+    }
+    .py-8 {
+        padding-top:2rem;
+        padding-bottom:2rem;
+    }
+    .my-16 {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    .mx-16 {
+        margin-left:2rem;
+        margin-right:2rem;
+    }
+    .mb-16 {
+        margin-bottom:4rem;
+    }
+    .my-8 {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    .mb-8 {
+        margin-bottom:2rem;
+    }
+    .mx-8 {
+        margin-left:2rem;
+        margin-right:2rem;
+    }
+}
+
+
+/* mobile navbar sidebar under lg breakpoint */
+@media (max-width: 992px) {
+
+    .navbar-collapse.collapsing .navbar-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: -25%;
+        transition: all 0.2s ease;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        flex-direction: column;
+        height: auto;
+        width: 75%;
+        transition: left 0.35s ease;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    .bg-ACD3EC {
+        background: url(../img/sp_top_bg.png) no-repeat;
+        background-size:cover;
+    }
+}
+
+@media (min-width: 768px){
+    body {
+        font-size: 0.8rem;
+    }
+    .font-size-10 {
+        font-size:10px;
+    }
+    .font-size-12 {
+        font-size:12px;
+    }
+    .font-size-15 {
+        font-size:15px;
+    }
+    .font-size-20 {
+        font-size:15px;
+    }
+    .font-size-30 {
+        font-size:20px;
+    }
+    .font-size-40 {
+        font-size:30px;
+    }
+    .font-size-50 {
+        font-size:40px;
+    }
+}
+@media (min-width: 992px){
+    body {
+        font-size: 1rem;
+    }
+    .font-size-10 {
+        font-size:10px;
+    }
+    .font-size-12 {
+        font-size:12px;
+    }
+    .font-size-15 {
+        font-size:15px;
+    }
+    .font-size-20 {
+        font-size:20px;
+    }
+    .font-size-30 {
+        font-size:20px;
+    }
+    .font-size-40 {
+        font-size:30px;
+    }
+    .font-size-50 {
+        font-size:40px;
+    }
+}
+@media (min-width: 1200px){
+    .font-size-10 {
+        font-size:10px;
+    }
+    .font-size-12 {
+        font-size:12px;
+    }
+    .font-size-15 {
+        font-size:15px;
+    }
+    .font-size-20 {
+        font-size:20px;
+    }
+    .font-size-30 {
+        font-size:30px;
+    }
+    .font-size-40 {
+        font-size:40px;
+    }
+    .font-size-50 {
+        font-size:50px;
+    }
+}
